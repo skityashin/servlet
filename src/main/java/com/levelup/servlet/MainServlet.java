@@ -16,7 +16,7 @@ public class MainServlet extends HttpServlet {
 
         req.setAttribute("name", "Skityashin");
 
-        req.getRequestDispatcher("mypage.jsp").forward(req, resp);
+        req.getRequestDispatcher("test_form.jsp").forward(req, resp);
 
     }
 
