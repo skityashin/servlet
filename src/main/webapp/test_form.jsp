@@ -11,7 +11,6 @@
     <title>TEST FORM</title>
 </head>
 <body>
-
   <form action="test.jsp" method="post">
     Login :<input type="text" name="login">
     Password :<input type="password" name="pass">
