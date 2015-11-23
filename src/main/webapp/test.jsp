@@ -19,6 +19,7 @@
     <%--<%!public int count=0;%>--%>
     <%--<%++count;%>--%>
     <%--<p><%=count%></p>--%>
+
     <%String login = request.getParameter("login");
       String  pass = request.getParameter("pass");
       String  log_in = request.getParameter("log_in");
