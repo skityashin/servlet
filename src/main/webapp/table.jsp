@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
 <head>
@@ -34,8 +34,8 @@
     </tr>
     <c:forEach var="weather" items="${weathers}">
         <tr>
-            <td><c:out value="${weather[0]}"/></td>
-            <%--<td><c:out value="${weather[1]}"/></td> --%>
+                <%--<td><c:out value="${weather[0]}"/></td>--%>
+                <%--<td><c:out value="${weather[1]}"/></td> --%>
             <td>${weather[0]}</td>
             <td>${weather[1]}</td>
             <td align="center">${weather[2]}℃</td>
