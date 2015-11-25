@@ -1,3 +1,5 @@
+<%@ page import="java.text.DecimalFormat" %>
+<%@ page import="java.text.NumberFormat" %>
 <%--
   Created by IntelliJ IDEA.
   User: php
@@ -32,6 +34,25 @@
     Log_IN: <span style="color: blue"><%=log_in%></span>
     <br>
     JOIN: <span style="color: blueviolet"><%=join%></span>
-
+    <br>
+    <table border="0" cellpadding="3">
+        <tr>
+            <th>Fahrenheit</th>
+            <th>Celsius</th>
+        </tr>
+        <%
+            NumberFormat fmt = new DecimalFormat("###.000");
+            for (int f = 32; f <= 212; f += 20) {
+                double c = ((f - 32) * 5) / 9.0;
+                String cs = fmt.format(c);
+        %>
+        <tr>
+            <td align="RIGHT"><%= f %></td>
+            <td align="RIGHT"><%= cs %></td>
+        </tr>
+        <%
+            }
+        %>
+    </table>
 </body>
 </html>
